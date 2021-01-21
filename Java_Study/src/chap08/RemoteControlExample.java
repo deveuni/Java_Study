@@ -4,12 +4,21 @@ public class RemoteControlExample {
 
 	public static void main(String[] args) {
 
-		RemoteControl rc;
+		RemoteControl rc = null;
+		
+		// 디폴트 메소드 사용
 		rc = new Television();
+		rc.turnOn();
+		rc.setMute(true);
+		
 		rc = new Audio();
-		//ddddddd
-		// 하하하하하하 
-		//?????????????????????
+		rc.turnOn();
+		rc.setMute(true); 
+		
+		// 정적 메소드 사용
+		RemoteControl.changeBattery();
+		
+	
 		
 	}
 
