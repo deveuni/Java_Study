@@ -20,6 +20,7 @@ public class Example {
 		ic.methodC();
 		System.out.println();
 		
+		//상속 인터페이스
 	}
 
 }
